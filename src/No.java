@@ -32,4 +32,14 @@ public class No {
     public void setDireita(No direita) {
         this.direita = direita;
     }
+
+    // Nó folha: não possui nenhum filho.
+    public boolean ehFolha() {
+        return esquerda == null && direita == null;
+    }
+
+    // Nó com os dois filhos preenchidos.
+    public boolean temDoisFilhos() {
+        return esquerda != null && direita != null;
+    }
 }
